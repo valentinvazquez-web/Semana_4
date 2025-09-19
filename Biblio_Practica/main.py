@@ -11,7 +11,7 @@ ejemplares [1] = 3
 titulos [2] = "Los Juegos del Hambre"
 ejemplares [2] = 7
 
-titulos [3] = "Carrie"
+titulos [3] = "Flash"
 ejemplares [3] = 0 #libro agotado
 
 def cargar_libros(titulos, ejemplares, cantidad_libros): 
