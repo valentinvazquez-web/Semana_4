@@ -1,5 +1,5 @@
 
-MAX = 10
+MAX = 20
 lista_alumnos = [""] * MAX
 lista_libros = [0] * MAX
 lista_comentarios = [""] * MAX
@@ -19,9 +19,6 @@ def ingresar_texto(mensaje):
 def ingresar_libros(mensaje):
        while True:
         libro = int(input(mensaje))
-        if libro == "":
-            print("No puede quedar en blanco y solo se deben ingresar numeros.")
-            continue
         if 1 <= libro <= 20:
             return libro
         else:
@@ -30,7 +27,6 @@ def ingresar_libros(mensaje):
         
 
 #-----------------------------Carga de datos---------------------------
-
 def ingresar_datos(lista_alumnos, lista_libros, lista_comentarios, cantidad):
     while cantidad < MAX:
         print(f"------ Alumno {cantidad + 1} ------")
