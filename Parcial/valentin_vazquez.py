@@ -1,5 +1,5 @@
 
-MAX = 20
+MAX = 10
 lista_alumnos = [""] * MAX
 lista_libros = [0] * MAX
 lista_comentarios = [""] * MAX
@@ -18,9 +18,9 @@ def ingresar_texto(mensaje):
 # ------------ Función para validar la cantidad de libros de 1 a 20 ----------
 def ingresar_libros(mensaje):
        while True:
-        libro = int(input(mensaje))
-        if 1 <= libro <= 20:
-            return libro
+        libros = int(input(mensaje))
+        if 1 <= libros <= 20:
+            return libros
         else:
             print("Debe ingresar una cantidad de libros entre 1 y 20")
             
